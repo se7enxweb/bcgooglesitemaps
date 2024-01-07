@@ -1,15 +1,15 @@
 {
-    "name": "brookinsconsulting/bcgooglesitemaps",
-    "description": "eZ Publish Legacy extension which provides a simple set of cron job cli scripts to generate sitemaps. Great for smart developers!",
+    "name": "se7enxweb/bcgooglesitemaps",
+    "description": "eZ Publish extension which provides cronjob scripts to generate complex website sitemaps. Great for smart developers!",
     "type": "ezpublish-legacy-extension",
-    "keywords": [ "eZ Publish", "eZ Publish Legacy", "eZ Publish Platform", "sitemap", "generator", "extension", "datatype" ],
-    "homepage": "https://github.com/brookinsconsulting/bcgooglesitemaps",
+    "keywords": [ "eZ Publish", "eZ Publish Legacy", "eZ Publish Platform", "sitemap", "generator", "extension", "cronjob" ],
+    "homepage": "https://github.com/se7enxweb/bcgooglesitemaps",
     "license": "GPL-2.0+",
     "authors": [
         {
-            "name" : "Brookins Consulting",
-            "homepage": "http://brookinsconsulting.com",
-            "email": "info@brookinsconsulting.com",
+            "name" : "7x",
+            "homepage": "https://se7enx.com",
+            "email": "info@se7enx.com",
             "role": "Developer"
         }
     ],
