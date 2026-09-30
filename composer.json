@@ -1,6 +1,6 @@
 {
     "name": "se7enxweb/bcgooglesitemaps",
-    "description": "eZ Publish extension which provides cronjob scripts to generate complex website sitemaps. Great for smart developers!",
+    "description": "Exponential extension which provides cronjob scripts to generate complex website sitemaps. Great for smart developers!",
     "type": "ezpublish-legacy-extension",
     "keywords": [ "eZ Publish", "eZ Publish Legacy", "eZ Publish Platform", "sitemap", "generator", "extension", "cronjob" ],
     "homepage": "https://github.com/se7enxweb/bcgooglesitemaps",
