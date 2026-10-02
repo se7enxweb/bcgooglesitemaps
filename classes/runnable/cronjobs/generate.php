@@ -2,6 +2,7 @@
 /**
  * The code of extension/bcgooglesitemaps/cronjobs/generate.php, moved into a class (#207 stage 1). The file extension/bcgooglesitemaps/cronjobs/generate.php is one call to it.
  * Guide: doc/bc/6.0/cli_cronjob_view_abstractions.md
+ * @description Generate the XML sitemap of the content tree for the siteaccess and write it to disk
  */
 /*
  * The original header of extension/bcgooglesitemaps/cronjobs/generate.php:

@@ -2,6 +2,7 @@
 /**
  * The code of extension/bcgooglesitemaps/cronjobs/generatemultilingual.php, moved into a class (#207 stage 1). The file extension/bcgooglesitemaps/cronjobs/generatemultilingual.php is one call to it.
  * Guide: doc/bc/6.0/cli_cronjob_view_abstractions.md
+ * @description Generate the multilingual XML sitemaps of the content tree and write them to disk
  */
 /*
  * The original header of extension/bcgooglesitemaps/cronjobs/generatemultilingual.php:
