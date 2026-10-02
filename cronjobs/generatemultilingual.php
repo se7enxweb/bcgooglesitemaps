@@ -2,10 +2,8 @@
 /**
  * File containing the generatemultilingual.php cronjob
  *
- * @copyright Copyright (C) 1999 - 2016 Brookins Consulting. All rights reserved.
- * @copyright Copyright (C) 2008 all2e GmbH. All rights reserved.
- * @license http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
- * @version //autogentag//
+ * @copyright Copyright (C) 1998 - 2026 7x and the Exponential Foundation. All rights reserved.
+ * @license GNU General Public License v2.0 (or any later version)
  * @package bcgooglesitemaps
  */
 

@@ -3,6 +3,19 @@
  * The code of extension/bcgooglesitemaps/cronjobs/generatemultilingual.php, moved into a class (#207 stage 1). The file extension/bcgooglesitemaps/cronjobs/generatemultilingual.php is one call to it.
  * Guide: doc/bc/6.0/cli_cronjob_view_abstractions.md
  */
+/*
+ * The original header of extension/bcgooglesitemaps/cronjobs/generatemultilingual.php:
+ *
+ *
+ * File containing the generatemultilingual.php cronjob
+ *
+ * @copyright Copyright (C) 1999 - 2016 Brookins Consulting. All rights reserved.
+ * @copyright Copyright (C) 2008 all2e GmbH. All rights reserved.
+ * @license http://www.gnu.org/licenses/gpl-2.0.txt GNU General Public License v2
+ * @version //autogentag//
+ * @package bcgooglesitemaps
+ *
+ */
 
 namespace
 {
