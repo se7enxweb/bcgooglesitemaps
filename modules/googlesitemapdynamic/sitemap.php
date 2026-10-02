@@ -9,22 +9,5 @@
  * @package bcgooglesitemaps
  */
 
-$Module = $Params['Module'];
-
-if ( isset( $Params["NodeID"] ) ) {
-    $NodeID = $Params["NodeID"];
-}
-else {
-    $NodeID = 2;
-}
-
-$tpl = eZTemplate::factory();
-$tpl->setVariable( "start_node_id", $NodeID );
-
-header( 'Content-Type: text/xml' );
-
-$Result = array();
-$Result['content'] = $tpl->fetch( "design:googlesitemapdynamic/sitemap.tpl" );
-$Result['pagelayout'] = 'googlesitemapdynamic_pagelayout.tpl';
-
-?>
+// The code is in extension/bcgooglesitemaps/classes/runnable/views/googlesitemapdynamic/sitemap.php (#207); this file is the entry point.
+return \Exponential\View\Extension\Bcgooglesitemaps\Googlesitemapdynamic\Sitemap::main( __FILE__, get_defined_vars() );
