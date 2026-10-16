@@ -26,12 +26,10 @@
      $subtree_visibility_list=ezini( 'SubtreeVisibilitySettings', 'SubtreeVisibility', 'bcgooglesitemapdynamic.ini' )
 
      $cur_timestamp=currentdate()
-     $diff_last_modified=sub( $cur_timestamp, $node.object.modified )
-     $request_uri='REQUEST_URI'|getenv
-     $http_host='HTTP_HOST'|getenv
-     $request_uri_list=$request_uri|explode( 'layout' )}
+     $diff_last_modified=sub( $cur_timestamp, $node.object.modified )}
+{* The site URL as the installation builds it: scheme (https too), host, index and siteaccess path *}
 {if not( is_set( $sitemap_siteurl ) )}
-    {def $sitemap_siteurl=concat( $http_host, $request_uri_list[0] )}
+    {def $sitemap_siteurl='/'|ezurl( 'no', 'full' )}
 {/if}
 {* Get the value for <changefreq> *}
 {if is_set( $subtree_change_freq_list[$node.node_id] )}
@@ -192,7 +190,7 @@
 {* Generate XML-output for one node *}
 {if eq( $output_visibility, 'show' )}
     <url>
-        <loc>{*concat( 'http://', $sitemap_siteurl, $node.url_alias )*}{concat( 'http://', $http_host, '/', $node.url_alias )|ezurl(no)}</loc>
+        <loc>{$node.url_alias|ezurl( 'no', 'full' )}</loc>
         <lastmod>{$node.object.modified|datetime( 'custom', '%Y-%m-%d' )}</lastmod>
         <changefreq>{$output_change_freq|wash()}</changefreq>
         <priority>{$output_priority|wash()}</priority>
