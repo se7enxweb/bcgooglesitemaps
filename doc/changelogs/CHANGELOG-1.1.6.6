@@ -1,0 +1,6 @@
+CHANGELOG 1.1.6.6
+
+- Fixed: The dynamic sitemap (googlesitemapdynamic/sitemap) is the whole response: it is sent as application/xml in
+  UTF-8 and the request ends with eZExecution::cleanExit(), outside any try/catch, so the debug output
+  (DebugOutput=enabled) no longer follows </urlset> and the XML stays valid, under PHP-FPM and the Velocity engine.
+- Added: tests/bcGoogleSitemapDynamicViewTest.php (no database) checks the view and the pagelayout.
