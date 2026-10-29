@@ -13,7 +13,7 @@ class bcGoogleSitemapsInfo
     public static function info()
     {
         return array( 'Name' => "<a href='https://github.com/se7enxweb/bcgooglesitemaps'>BC Google Sitemaps</a>",
-                      'Version' => "1.1.6.6",
+                      'Version' => "1.1.6.7",
                       'Copyright' => "Copyright (C) 1998 - 2026 Exponential Foundation and 7x. All rights reserved. Copyright (C) 2008 <a href='http:www.all2e.com' title='all2e GmbH'>all2e GmbH</a> and 2008 <a href='http://www.mediata.net' title='MEDIATA Communications GmbH'>MEDIATA Communications GmbH</a>",
                       'License' => "GNU General Public License v2.0 (or any later version)",
                       'info_url' => "https://packagist.org/packages/se7enxweb/bcgooglesitemaps"
