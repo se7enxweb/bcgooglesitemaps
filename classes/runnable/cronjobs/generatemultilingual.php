@@ -214,7 +214,11 @@ class Generatemultilingual extends \Exponential\Runnable\CronjobPart
              * BC: Fetch siteaccess settings and locale
              */
             $siteAccessINI = \eZINI::instance( 'site.ini.append.php', 'settings/siteaccess/' . $siteAccess  );
-            $siteacessLocale = $siteAccessINI->variable( 'RegionalSettings', 'Locale' );
+            // The content language of the siteaccess: ContentObjectLocale when set, as Locale may be a display variant
+            // (eng-US@kracker) that is no content language
+            $siteacessLocale = $siteAccessINI->hasVariable( 'RegionalSettings', 'ContentObjectLocale' )
+                ? $siteAccessINI->variable( 'RegionalSettings', 'ContentObjectLocale' )
+                : $siteAccessINI->variable( 'RegionalSettings', 'Locale' );
 
             /**
              * BC: Fetch siteaccess site url
@@ -234,7 +238,7 @@ class Generatemultilingual extends \Exponential\Runnable\CronjobPart
 
                 if( !in_array( $siteacessLocale, $siteaccessLanguages ) )
                 {
-                    array_push( $siteacessLocale, $siteaccessLanguages );
+                    array_push( $siteaccessLanguages, $siteacessLocale );
                 }
 
                 array_push( $siteaccesses, array( 'siteaccess' => $siteAccess,
